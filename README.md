@@ -18,7 +18,7 @@ $ docker --version
 ## Build docker image
 
 ```bash
-$ curl -sSL https://github.com/shadowsocks/shadowsocks-libev/raw/master/docker/alpine/Dockerfile | docker build -t shadowsocks-libev -
+$ curl -sSL https://github.com/stawidy/shadowsocks-libev-docker/raw/master/Dockerfile | docker build -t shadowsocks-libev -
 $ docker images
 ```
 
@@ -27,7 +27,7 @@ $ docker images
 ## Run docker container
 
 ```bash
-$ docker run -d -e METHOD=aes-256-cfb -e PASSWORD=9MLSpPmNt -p 8388:8388 --restart always shadowsocks-libev
+$ docker run -d -e METHOD=aes-128-cfb -e PASSWORD=9MLSpPmNt -p 8388:8388 --restart always shadowsocks-libev
 $ docker ps
 ```
 
@@ -46,7 +46,7 @@ shadowsocks:
   ports:
     - "8388:8388"
   environment:
-    - METHOD=aes-256-cfb
+    - METHOD=aes-128-cfb
     - PASSWORD=9MLSpPmNt
   restart: always
 ```
@@ -74,7 +74,7 @@ Don't forget to share internet with your friends.
     "local_port": 1080,
     "password": "9MLSpPmNt",
     "timeout": 600,
-    "method": "aes-256-cfb"
+    "method": "aes-128-cfb"
 }
 ```
 

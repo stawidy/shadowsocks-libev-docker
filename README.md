@@ -22,7 +22,7 @@ $ curl -sSL https://github.com/shadowsocks/shadowsocks-libev/raw/master/docker/a
 $ docker images
 ```
 
-> You can also use a pre-built docker image: [vimagick/shadowsocks-libev][4] ![][5].
+> You can also use a pre-built docker image: [stawidy/shadowsocks-libev][4].
 
 ## Run docker container
 
@@ -31,11 +31,11 @@ $ docker run -d -e METHOD=aes-256-cfb -e PASSWORD=9MLSpPmNt -p 8388:8388 --resta
 $ docker ps
 ```
 
-> :warning: Click [here][6] to generate a strong password to protect your server.
+> :warning: Click [here][5] to generate a strong password to protect your server.
 
 ## Use docker-compose to manage (optional)
 
-It is very handy to use [docker-compose][7] to manage docker containers.
+It is very handy to use [docker-compose][6] to manage docker containers.
 You can download the binary at <https://github.com/docker/compose/releases>.
 
 This is a sample `docker-compose.yml` file.
@@ -63,7 +63,7 @@ $ docker-compose ps
 
 ## Finish
 
-At last, download shadowsocks client [here][8].
+At last, download shadowsocks client [here][7].
 Don't forget to share internet with your friends.
 
 ```yaml
@@ -81,8 +81,7 @@ Don't forget to share internet with your friends.
 [1]: https://github.com/shadowsocks/shadowsocks-libev
 [2]: https://shadowsocks.org/en/index.html
 [3]: https://github.com/docker/docker
-[4]: https://hub.docker.com/r/vimagick/shadowsocks-libev/
-[5]: https://badge.imagelayers.io/vimagick/shadowsocks-libev:latest.svg
-[6]: https://duckduckgo.com/?q=password+12&t=ffsb&ia=answer
-[7]: https://github.com/docker/compose
-[8]: https://shadowsocks.org/en/download/clients.html
+[4]: https://hub.docker.com/r/stawidy/shadowsocks-libev/
+[5]: https://duckduckgo.com/?q=password+12&t=ffsb&ia=answer
+[6]: https://github.com/docker/compose
+[7]: https://shadowsocks.org/en/download/clients.html

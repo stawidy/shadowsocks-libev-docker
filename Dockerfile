@@ -5,14 +5,14 @@
 FROM alpine
 MAINTAINER stawidy <duyizhaozj321@yahoo.com>
 
-ARG SS_VER=2.6.1
+ARG SS_VER=2.6.2
 ARG SS_URL=https://github.com/shadowsocks/shadowsocks-libev/archive/v$SS_VER.tar.gz
 
 ENV SERVER_ADDR 0.0.0.0
 ENV SERVER_PORT 8388
 ENV PASSWORD=
-ENV METHOD      aes-256-cfb
-ENV TIMEOUT     300
+ENV METHOD      aes-128-cfb
+ENV TIMEOUT     600
 ENV DNS_ADDR    8.8.8.8
 ENV DNS_ADDR_2  8.8.4.4
 

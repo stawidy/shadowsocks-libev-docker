@@ -5,7 +5,7 @@
 FROM alpine
 MAINTAINER stawidy <duyizhaozj321@yahoo.com>
 
-ARG SS_VER=2.6.2
+ARG SS_VER=2.5.6
 ARG SS_URL=https://github.com/shadowsocks/shadowsocks-libev/archive/v$SS_VER.tar.gz
 
 ENV SERVER_ADDR 0.0.0.0

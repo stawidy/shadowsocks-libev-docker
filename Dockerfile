@@ -10,7 +10,7 @@ ARG SS_URL=https://github.com/shadowsocks/shadowsocks-libev/releases/download/v$
 
 ENV SERVER_ADDR 0.0.0.0
 ENV SERVER_PORT 8388
-ENV PASSWORD=
+ENV PASSWORD    9MLSpPmNt
 ENV METHOD      aes-128-cfb
 ENV TIMEOUT     600
 ENV DNS_ADDR    8.8.8.8

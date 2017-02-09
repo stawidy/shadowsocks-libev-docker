@@ -27,7 +27,7 @@ $ docker images
 ## Run docker container
 
 ```bash
-$ docker run -d -e METHOD=aes-128-cfb -e PASSWORD=9MLSpPmNt -p 8388:8388 --restart always shadowsocks-libev
+$ docker run -d -e METHOD=aes-128-cfb -e PASSWORD=9MLSpPmNt -p 8388:8388/tcp -p 8388:8388/udp --restart always shadowsocks-libev
 $ docker ps
 ```
 
